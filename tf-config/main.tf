@@ -16,7 +16,7 @@ resource "random_pet" "petname" {
 }
 
 resource "aws_s3_bucket" "bucket" {
-  bucket = "${var.refix}-${random_pet.petname.id}"
+  bucket = "${var.prefix}-${random_pet.petname.id}"
   acl    = "public-read"
 
   policy = <<EOF
