@@ -119,8 +119,7 @@ resource_changes = {
 				"create",
 			],
 			"after": {
-				#ACLVALUE
-				"acl":                                  "<UPDATE_VALUE>",
+				"acl":                                  "#ACL",
 				"bucket_prefix":                        null,
 				"cors_rule":                            [],
 				"force_destroy":                        true,
@@ -130,10 +129,9 @@ resource_changes = {
 				"object_lock_configuration":            [],
 				"replication_configuration":            [],
 				"server_side_encryption_configuration": [],
-				#TAGVALUE
 				"tags": {
-					"<UPDATE_ID>":  "Prod",
-					"<UPDATE_ID>":  "HashiConf-Digital",
+					"#Name":  "Prod",
+					"#Environment":  "HashiConf-Digital",
 					"TTL":          60,
 				},
 				"website": [
