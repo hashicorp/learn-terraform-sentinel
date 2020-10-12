@@ -1,10 +1,7 @@
 import "tfplan/v2" as tfplan
 
 # Filter S3 buckets
-s3_buckets = 
 
 # Rule to require at least one tag
-bucket_tags = 
 
 # Main rule that requires other rules to be true
-main = 
